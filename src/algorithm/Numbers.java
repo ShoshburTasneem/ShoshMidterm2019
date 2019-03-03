@@ -45,9 +45,44 @@ public class Numbers {
 
 
 
+	storeRandomNumbers(num);
+	randomize(num, n);
+
+	//Bubble sorting method
+		algo.bubbleSort(num);
+		long bubbleSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
 
 
+		//Quick Sort
 
+		randomize(num, n);
+
+		algo.quickSort(num, 0, n - 1);
+
+		long quickSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Quick Sort take: " + quickSortExecutionTime + " milli sec");
+
+
+		//Heap Sort
+		randomize(num, n);
+		algo.heapSort(num);
+		long heapSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Heap Sort take: " + heapSortExecutionTime + " milli sec");
+
+
+		//Bucket Sort
+		randomize(num , n);
+		algo.bucketSort(num);
+		System.out.println("Total Execution Time of " + num.length + " numbers in BucketSort take: " + algo.executionTime + " milli sec");
+
+
+		//Shell Sort
+		randomize(num, n);
+
+		algo.shellSort(num);
+		long shellSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Shell Sort take: " + shellSortExecutionTime + " milli sec");
 
 
 		//Come to conclusion about which Sorting Algo is better in given data set.

@@ -16,9 +16,9 @@ public class FindLowestDifference {
                 int diff =  Math.abs(array1[i]-array2[j]);
                 if(diff<min) min = diff;
 
-                }System.out.println(min);
+                }
 
-            }
+            }System.out.println(min);
 
         }
 
